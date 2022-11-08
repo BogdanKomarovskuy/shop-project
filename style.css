@@ -183,3 +183,19 @@ li{
 .p-filter{
     margin-top: 45px;
 }
+
+.footer{
+    height: 100px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+.fother-text{
+   
+    color: #2c71b8;
+    
+}
