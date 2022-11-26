@@ -15,7 +15,8 @@ li{
 p{
     font-family: 'Roboto', sans-serif;
     color: white;
-    font-size: 21px;   
+    font-size: 21px; 
+    margin:15px;  
 }
 .container{
     width: 1200px;
@@ -58,9 +59,25 @@ p{
 .menu li{
     width: 25%;
     border-left: 1px solid #2c71b8;
+    position: relative;
 }
 .menu li:last-child {
     border-right: 1px solid #2c71b8;
+}
+.menu ul{
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    display: none;
+    z-index: 10;
+    background-color:white;
+    color:#2c6096;
+    width: 285px;
+}
+.menu li:hover ul{
+    display: block;
+    background-color:#2c6096;
+    color: #ffffff;
 }
 .menu a{
     display: block;
@@ -70,6 +87,35 @@ p{
     color: #2c71b8;
     line-height: 50px;
     text-align: center;
+}
+.menu a:hover{
+    background-color:#2c6096;
+    color: #ffffff;
+    transition: all .3s linear;
+}
+
+.menu ul li a{
+    background-color:#ffffff;
+}
+.downmenu{
+    width: 285px;
+}
+i {
+    border: solid #2c71b8;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    top:18px
+
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.down:hover{
+    border: solid #ffffff;  
 }
 .logo{
     margin-top: 8px;
@@ -151,12 +197,13 @@ p{
 .filter{
     width: 270px;
     height: 840px;
-    border: solid 1px white;
+    border-right: solid 1px white;
     color: white;
     padding: 30px 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
     line-height: 40px;
+    background-color: rgba(86, 141, 198, 0.75)
 }
 .filter li {
     font-size: 21px;
@@ -193,7 +240,26 @@ p{
 .p-filter{
     margin-top: 45px;
 }
-
+.sortdrop{
+    height: 40px;
+    width: 270px;
+    background-color:#2c71b8;
+    border: solid 1px white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+.producr-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.col-9 h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: bold; 
+    color: #ffffff;
+}
 .footer{
     height: 100px;
     align-items: center;
@@ -261,6 +327,46 @@ p{
     background-repeat:no-repeat;
     background-position:center;
 }
+.product-2{
+    background-image: url("images/icon\ \(9\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-3{
+    background-image: url("images/icon\ \(10\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-4{
+    background-image: url("images/icon\ \(11\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-5{
+    background-image: url("images/icon\ \(12\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-6{
+    background-image: url("images/icon\ \(13\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-7{
+    background-image: url("images/icon\ \(14\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-8{
+    background-image: url("images/icon\ \(15\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.product-9{
+    background-image: url("images/icon\ \(16\).png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
 .text-bold{
     font-weight: bold;
 }
@@ -292,6 +398,11 @@ p{
     margin-top: 15px;
 
 }
+.but-details:hover {
+    background-color: white;
+    color:#2c6096;
+    transition: all .3s linear;
+}
 .add-card{
     height: 50px;
     width: 210px;
@@ -301,4 +412,19 @@ p{
     margin-top: 15px;
     color: white;
     border: none;
+}
+.add-card:hover{
+    background-color:white;
+    color:#2c6096;
+    transition: all .3s linear;
+}
+.load-more{
+margin: 20px;
+margin-bottom: 50px;
+display: flex;
+justify-content: center;
+font-size: 36px;
+color: #ffffff;
+font-family: 'Roboto', sans-serif;
+
 }
